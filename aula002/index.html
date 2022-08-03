@@ -15,7 +15,13 @@
     <main>
         <h2> Escolha uma cor: (azul, vermelho, amarelo ou verde)</h2>
         <form>
-            <input type="text" placeholder="Digite aqui" id="cor">
+            <input type="text" list="cores" id="cor">
+            <datalist id="cores">
+                <option value="Azul"></option>
+                <option value="Vermelho"></option>
+                <option value="Amarelo"></option>
+                <option value="Verde"></option>
+            </datalist>
             <button type="button" id="aplicar">Aplicar</button>
         </form>
     </main>

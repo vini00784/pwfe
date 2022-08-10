@@ -13,7 +13,7 @@ function mostrarResultado() {
         if(valorImc < 18.5) {
             classificacao = 'abaixo do peso.'
         } else if(valorImc < 25) {
-            classificacao = 'com o peso ideal. Parabéns!'
+            classificacao = 'com o peso ideal. <span class = "verde">Parabéns!</span>'
         } else if(valorImc < 30) {
             classificacao = 'levemente acima do peso.'
         } else if(valorImc < 35) {
@@ -21,10 +21,10 @@ function mostrarResultado() {
         } else if(valorImc < 40) {
             classificacao = 'com obesidade grau II.'
         } else {
-            classificacao = 'com obesidade grau III. Tome cuidado!'
+            classificacao = 'com obesidade grau III. <span class = "vermelho">Tome cuidado!</span>'
         }
 
-        resultado.textContent = `${nome}, seu IMC é: ${valorImc}, e você está ${classificacao}`
+        resultado.innerHTML = `${nome}, seu IMC é: ${valorImc}, e você está ${classificacao}`
     }
 }
 

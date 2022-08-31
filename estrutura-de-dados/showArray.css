@@ -1,0 +1,28 @@
+.numbers-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+h2{
+    font-size: 2.2rem;
+    min-width: 350px;
+    text-align: end;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: aqua; */
+}
+
+.numbers-item {
+    background-color: white;
+    border: solid 1.5px black;
+    border-radius: 5px;
+    min-width: 60px;
+    height: 60px;
+    color: black;
+    font-size: 2rem;
+    display: grid;
+    place-content: center;
+}

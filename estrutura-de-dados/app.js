@@ -68,7 +68,7 @@ const totalValues = totalDiscount4.reduce(total, 0)
 // Exercício 4:
 const findOddNumbers = (number) => number % 2 != 0
 const oddNumbers = numbers.filter(findOddNumbers)
-const totalOddNumbers = (a, b) => a + b
+const totalOddNumbers = (number) => number + 21
 const plus21 = oddNumbers.map(totalOddNumbers, 0)
 
 

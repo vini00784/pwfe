@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+main {
+    margin: 50px;
+}
+
+input {
+    padding: 8px;
+    border: solid 2.5px black;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 12px;
+    padding: 12px;
+    background-color: black;
+}
+
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
